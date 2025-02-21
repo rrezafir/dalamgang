@@ -490,6 +490,7 @@ html {
 
 .footer-copyright-2 {
   color: #fff;
+  margin-left: 66px;
 }
 
 .footer-title-2 {
@@ -522,7 +523,7 @@ html {
 
 .footer-wrapper-two-2 {
   grid-column-gap: 0rem;
-  grid-row-gap: 48px;
+  grid-row-gap: 30fpx;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
@@ -535,6 +536,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-left: 40px;
   width: 100%;
   margin-top: 0;
   display: flex;
