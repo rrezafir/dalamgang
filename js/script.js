@@ -26,3 +26,35 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
         }
     });
 });
+
+// Slider Image Menu Kopi
+
+// Slide Gambar Artikel Kita //
+document.addEventListener("DOMContentLoaded", function () {
+    // Fungsi untuk membuat slider
+    function createSlider(slideClass) {
+        const slides = document.querySelectorAll(`.${slideClass}`);
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function showNextSlide() {
+            // Sembunyikan gambar saat ini
+            slides[currentIndex].classList.remove("opacity-100");
+            slides[currentIndex].classList.add("opacity-0");
+
+            // Pindah ke gambar berikutnya
+            currentIndex = (currentIndex + 1) % totalSlides;
+
+            // Tampilkan gambar berikutnya
+            slides[currentIndex].classList.remove("opacity-0");
+            slides[currentIndex].classList.add("opacity-100");
+        }
+
+        // Mulai interval untuk slider ini
+        setInterval(showNextSlide, 3000);
+    }
+
+    // Inisialisasi kedua slider
+    createSlider('gambar-slide-1');
+    createSlider('gambar-slide-2');
+});
